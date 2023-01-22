@@ -1,0 +1,151 @@
+Host: 179.188.16.186
+Name: odonto35
+Pass: V92hWhyE
+
+
+// CREATE DATABASE odonto;
+
+CREATE TABLE access
+(
+id int NOT NULL AUTO_INCREMENT,
+username varchar(255) NOT NULL,
+password varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE agenda
+(
+id int NOT NULL AUTO_INCREMENT,
+date_time datetime NOT NULL UNIQUE,
+patient varchar(255) NOT NULL,
+type varchar(255) NOT NULL,
+doc varchar(255) NOT NULL,
+date date NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE doctors
+(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+specialty varchar(255) NOT NULL,
+cro varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE types
+(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE cids
+(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE finances
+(
+id int NOT NULL AUTO_INCREMENT,
+type varchar(255) NOT NULL,
+date date NOT NULL,
+description varchar(255) NOT NULL,
+value varchar(255) NOT NULL,
+method varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE patients
+(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+sex varchar(255) NOT NULL,
+address varchar(255) NOT NULL,
+number varchar(255) NOT NULL,
+district varchar(255) NOT NULL,
+cep varchar(255) NOT NULL,
+city varchar(255) NOT NULL,
+state varchar(255) NOT NULL,
+email varchar(255) NOT NULL,
+phone varchar(255) NOT NULL,
+naturality varchar(255) NOT NULL,
+nationality varchar(255) NOT NULL,
+nasc date NOT NULL,
+RG varchar(255) NOT NULL,
+CPF varchar(255) NOT NULL,
+status varchar(255) NOT NULL,
+work varchar(255) NOT NULL,
+sponsor varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE anamnese
+(
+id int NOT NULL AUTO_INCREMENT,
+patient varchar(255) NOT NULL,
+D1 varchar(255) NOT NULL,
+D2 varchar(255) NOT NULL,
+D3 varchar(255) NOT NULL,
+D4 varchar(255) NOT NULL,
+D5 varchar(255) NOT NULL,
+D6 varchar(255) NOT NULL,
+D7 varchar(255) NOT NULL,
+D8 varchar(255) NOT NULL,
+D9 varchar(255) NOT NULL,
+D10 varchar(255) NOT NULL,
+tratamento varchar(255) NOT NULL,
+remedio varchar(255) NOT NULL,
+gravidez varchar(255) NOT NULL,
+medico varchar(255) NOT NULL,
+alergia varchar(255) NOT NULL,
+cirurgia varchar(255) NOT NULL,
+cicatriz varchar(255) NOT NULL,
+anestesia varchar(255) NOT NULL,
+hemorragia varchar(255) NOT NULL,
+habitos text NOT NULL,
+familia text NOT NULL,
+obs text NOT NULL,
+PRIMARY KEY (ID)
+);
+
+CREATE TABLE odontograms
+(
+id int NOT NULL AUTO_INCREMENT,
+patient varchar(255) NOT NULL,
+T11 varchar(255) NOT NULL,
+T12 varchar(255) NOT NULL,
+T13 varchar(255) NOT NULL,
+T14 varchar(255) NOT NULL,
+T15 varchar(255) NOT NULL,
+T16 varchar(255) NOT NULL,
+T17 varchar(255) NOT NULL,
+T18 varchar(255) NOT NULL,
+T21 varchar(255) NOT NULL,
+T22 varchar(255) NOT NULL,
+T23 varchar(255) NOT NULL,
+T24 varchar(255) NOT NULL,
+T25 varchar(255) NOT NULL,
+T26 varchar(255) NOT NULL,
+T27 varchar(255) NOT NULL,
+T28 varchar(255) NOT NULL,
+T31 varchar(255) NOT NULL,
+T32 varchar(255) NOT NULL,
+T33 varchar(255) NOT NULL,
+T34 varchar(255) NOT NULL,
+T35 varchar(255) NOT NULL,
+T36 varchar(255) NOT NULL,
+T37 varchar(255) NOT NULL,
+T38 varchar(255) NOT NULL,
+T41 varchar(255) NOT NULL,
+T42 varchar(255) NOT NULL,
+T43 varchar(255) NOT NULL,
+T44 varchar(255) NOT NULL,
+T45 varchar(255) NOT NULL,
+T46 varchar(255) NOT NULL,
+T47 varchar(255) NOT NULL,
+T48 varchar(255) NOT NULL,
+PRIMARY KEY (ID)
+);

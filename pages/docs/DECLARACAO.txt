@@ -1,0 +1,25 @@
+Atestamos, a pedido, que o (a) paciente <b>_paciente_</b>, esteve sob nossos cuidados profissionais na data <b>_data_</b>
+no horário de  <b>_hr_i_</b> ás <b>_hr_f_</b>, não podendo comparecer as atividades neste período.
+
+
+
+
+
+
+
+Cordialmente,
+
+Ipatinga <b>_dia_</b> de <b>_mes_</b> de <b>_ano_</b>
+
+
+
+
+
+
+
+
+
+
+<center>_______________________________________________________________________
+<b>_responsavel_</b>
+</center>

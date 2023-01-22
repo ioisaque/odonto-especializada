@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/* CSS Document */
+@media print
+{
+    #pager,
+    form,
+    .no-print
+    {
+        display: none !important;
+        height: 0;
+    }
+
+
+    .no-print, .no-print *{
+        display: none !important;
+        height: 0;
+    }
+}
+* {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+/* =================================================== */
+html,
+body {
+	margin: 0 !important;
+	padding: 0 !important;
+	
+	width: 100% !important;
+	height: 100% !important;
+	position: relative;
+	font-family: Tahoma;	
+	
+	background:#c8e4dd;
+}
+#wrapper {
+	z-index: 1;
+	
+	width: 1024.5px;
+	min-height: 100%;
+	
+	padding: 25px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+	
+	position: relative;
+	background: url("../img/transparent.png") no-repeat fixed center;
+	background-color: rgba(255, 255, 255, 0.7);
+	
+	/* Font settigns */
+	color: #000000;
+	font-size: 13px;
+	line-height: 1.230;
+	text-align: justify;		
+}
+#header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;	
+    margin-left: auto;
+    margin-right: auto;
+	
+	position: absolute;
+	background: #80baac;
+}
+#content {
+	width: 100%;
+	min-height: 100%;
+}
+#footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	
+	position: absolute;
+	background: #80baac;
+	
+	/* Font settigns */
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+/* ========================================================= */
+#navbar {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.navtab {
+	min-width: 140px;
+	height: 50px;
+	padding: 10px;
+	cursor: pointer;
+	display: inline-block;
+	
+	position: relative;
+	background: #80baac;
+
+	/* Font settigns */
+	color: white;	
+	font-weight: bold;
+	text-decoration: none;
+}
+.navtab:hover {
+	background: #2b6859;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	width: 140px;
+	height: 50px;
+	padding: 10px;
+	cursor: pointer;
+	display: inline-block;
+
+	/* Font settigns */
+	color: white;	
+	font-weight: bold;
+	text-decoration: none;
+}
+.dropdown:hover {
+	background: #2b6859;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	min-width: 140px;
+    display: none;
+	margin-top: 7px;
+	margin-left: -10px;
+	
+	position: absolute;
+    background-color: #80baac;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+	padding: 10px;
+	display: block;
+    text-align: left;
+    text-decoration: none;
+}
+/* Imgs inside the dropdown */
+.dropdown-content img {
+	max-width: 40px;
+	max-height: 30px;
+	margin-right: 5px;
+}
+/* Text inside the dropdown */
+.dropdown-content span {
+    text-align: justify;
+    text-align-last:right;
+	margin-left: auto;
+	margin-right: 5px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #2b6859}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ========================================================= */
+.icon {
+	max-width: 40px;
+	max-height: 30px;
+}
+.logo {
+    width: 80%;
+    height: auto;
+	display: block;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+#login {
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: auto;
+	
+	position: absolute;
+    transform: translate(-50%,-50%);
+}
+#login-user {
+    width: 300px;
+    height: auto;
+	
+	padding: 20px;
+	background: white;
+	border: 1px solid #cacac9;
+}
+#login-guest {
+    width: 300px;
+    height: auto;
+	
+	border: none;
+	box-shadow: none;
+	background: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;	
+	
+	position: absolute;
+	text-align: right;
+}
+select, textarea, input:not([type=image]):not([type=radio]):not([type=checkbox]){
+	color: #2b6859;
+    font-size: 13px;
+    font-weight: bold;
+	
+	padding: 10px;
+	box-shadow: none;
+    margin: 0px auto;
+	background: rgba(255, 255, 255, 0.7);	  
+	border: 1px solid #80baac;
+	/* -webkit-appearance: none; */
+    /* -moz-appearance: none; */
+    /* appearance: none; */
+	
+    transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-webkit-transition: box-shadow .5s ease;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.1), 0 1px 1px rgba(255,255,255,0.1);
+}
+select{ padding: 2px; }
+input[type=date]{ height: 35px; }
+input:not([type=image]):not([type=radio]):not([type=checkbox]):-webkit-autofill,
+input:not([type=image]):not([type=radio]):not([type=checkbox]):-webkit-autofill:hover,
+input:not([type=image]):not([type=radio]):not([type=checkbox]):-webkit-autofill:focus,
+input:not([type=image]):not([type=radio]):not([type=checkbox]):-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+input:not([type=image]):not([type=radio]):not([type=checkbox]):focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.1), 0 1px 1px rgba(255,255,255,0.1); }
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+/* ========================================================= */
+form button {
+	border: none;
+	cursor: pointer;
+	background: none;
+}
+#imgbut {
+	color: white;
+	font-weight: bold;
+	
+	float: right;
+	border: none;
+	cursor: pointer;
+	background: none;
+}
+#search {
+    width: auto;
+    height: 30px;
+    margin-bottom: 25px;
+}
+.server_response {
+	display: block;
+	color: #2b6859;
+	margin: 10px auto;
+}
+#result {
+	width: 300px;
+	height: auto;
+	color: #757575;
+}
+.result_line {
+	width: 100%;
+	height: 30px;
+	margin: 3px 0px 0px 0px;
+	padding: 5.5px;
+	display: block;
+	
+	cursor: pointer;
+	border: solid 1px #80baac;
+	background: rgba(98, 226, 191, 0.2);	
+}
+.result_line:hover {
+	background: rgba(98, 226, 191, 0.4);
+}
+/* ========================================================= */
+#cash {
+	width: 485px;
+	height: 272px;
+	display: inline-block;
+}
+.cell {
+	height: 100%;
+	padding: 5px;
+	display: inline-block;
+	
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	border: none !important;
+	box-shadow: none !important;	
+	background: none !important;	
+}
+.line {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+	border-top: solid 1px grey;
+	background: rgba(0, 0, 0, 0.1);
+	
+	/* Font settigns */
+	color: black;
+	font-weight: bolder;
+}
+.line_in {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+	border-top: solid 1px grey;
+	background: rgba(0, 255, 0, 0.2);
+}
+.line_in:hover {
+	background: rgba(0, 255, 0, 0.4);
+}
+.line_out {	
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+	border-top: solid 1px grey;
+	background: rgba(255, 0, 0, 0.2);
+}
+.line_out:hover {
+	background: rgba(255, 0, 0, 0.4);
+}
+.line_doc {
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+	border-top: solid 1px grey;
+	background: rgba(98, 226, 191, 0.2);	
+}
+.line_doc:hover {
+	background: rgba(98, 226, 191, 0.4);
+}
+#appointment {
+    width: 320px;
+    margin: 5px auto;
+	display: inline-block;
+}
+#subtitle {
+	width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: bowlby-one;
+	padding: 10px;
+    background: #80baac;
+}
+#container {
+    width: 100%;
+	height: auto;	
+	padding: 15px;
+	display: inline-block;
+	background: rgba(119, 196, 178, 0.3);
+}
+#doc_file {
+    width: 900px;
+	height: 60vh;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	background: rgba(119, 196, 178, 0.3);
+}
+.odontograma {
+    width: 900px;
+	height: auto;	
+	margin: auto;
+	margin-top: 20px;
+}
+.odontograma img {
+    width: 100%;
+	height: auto;
+	display: block;	
+	margin: 0 auto;
+}
+.Top_teeth { width: 897px; height: 142px; margin: 0; position: absolute; }
+.Lower_teeth { width: 897px; height: 142px; margin-top: 199px; position: absolute; }
+
+.Top_teeth input[type=radio] { display:none; }
+.Lower_teeth input[type=radio] { display:none; }
+
+.Top_teeth label { display: inline-block; cursor: pointer; height: 142px; background-image: url(../img/top_border.png); }
+.Lower_teeth label { display: inline-block; cursor: pointer; height: 142px; background-image: url(../img/lower_border.png); }
+
+.T18 { background-position: -74px 0; }  input[type="radio"]:checked + .T18 { background-position: -74px -142px; }
+.T17 { background-position: -116px 0; } input[type="radio"]:checked + .T17 { background-position: -116px -142px; }
+.T16 { background-position: -167px 0; } input[type="radio"]:checked + .T16 { background-position: -167px -142px; }
+.T15 { background-position: -225px 0; } input[type="radio"]:checked + .T15 { background-position: -225px -142px; }
+.T14 { background-position: -273px 0; } input[type="radio"]:checked + .T14 { background-position: -273px -142px; }
+.T13 { background-position: -316px 0; } input[type="radio"]:checked + .T13 { background-position: -316px -142px; }
+.T12 { background-position: -367px 0; } input[type="radio"]:checked + .T12 { background-position: -367px -142px; }
+.T11 { background-position: -411px 0; } input[type="radio"]:checked + .T11 { background-position: -411px -142px; }
+
+.T21 {background-position: -462px 0;} input[type="radio"]:checked + .T21 { background-position: -462px -142px; }
+.T22 {background-position: -517px 0;} input[type="radio"]:checked + .T22 { background-position: -517px -142px; }
+.T23 {background-position: -560px 0;} input[type="radio"]:checked + .T23 { background-position: -560px -142px; }
+.T24 {background-position: -612px 0;} input[type="radio"]:checked + .T24 { background-position: -612px -142px; }
+.T25 {background-position: -650px 0;} input[type="radio"]:checked + .T25 { background-position: -650px -142px; }
+.T26 {background-position: -702px 0;} input[type="radio"]:checked + .T26 { background-position: -702px -142px; }
+.T27 {background-position: -756px 0;} input[type="radio"]:checked + .T27 { background-position: -756px -142px; }
+.T28 {background-position: -803px 0;}  input[type="radio"]:checked + .T28 { background-position: -803px -142px; }
+
+.T48 {background-position: -74px 0;}  input[type="radio"]:checked + .T48 { background-position: -74px -142px; }
+.T47 {background-position: -127px 0;} input[type="radio"]:checked + .T47 { background-position: -127px -142px; }
+.T46 {background-position: -182px 0;} input[type="radio"]:checked + .T46 { background-position: -182px -142px; }
+.T45 {background-position: -252px 0;} input[type="radio"]:checked + .T45 { background-position: -252px -142px; }
+.T44 {background-position: -296px 0;} input[type="radio"]:checked + .T44 { background-position: -296px -142px; }
+.T43 {background-position: -336px 0;} input[type="radio"]:checked + .T43 { background-position: -336px -142px; }
+.T42 {background-position: -380px 0;} input[type="radio"]:checked + .T42 { background-position: -380px -142px; }
+.T41 {background-position: -425px 0;} input[type="radio"]:checked + .T41 { background-position: -425px -142px; }
+
+.T31 {background-position: -458px 0;} input[type="radio"]:checked + .T31 { background-position: -458px -142px; }
+.T32 {background-position: -499px 0;} input[type="radio"]:checked + .T32 { background-position: -499px -142px; }
+.T33 {background-position: -544px 0;} input[type="radio"]:checked + .T33 { background-position: -544px -142px; }
+.T34 {background-position: -593px 0;} input[type="radio"]:checked + .T34 { background-position: -593px -142px; }
+.T35 {background-position: -641px 0;} input[type="radio"]:checked + .T35 { background-position: -641px -142px; }
+.T36 {background-position: -685px 0;} input[type="radio"]:checked + .T36 { background-position: -685px -142px; }
+.T37 {background-position: -748px 0;} input[type="radio"]:checked + .T37 { background-position: -748px -142px; }
+.T38 {background-position: -801px 0;} input[type="radio"]:checked + .T38 { background-position: -801px -142px; }
+
+#log-msg  {
+	color: #2b6859;
+	background: none;	  
+	border: none;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;	
+	box-shadow: none;	
+}
+.tooth_description {
+	width: 900px;
+	height: 100px;
+	resize: none;
+	display: block;
+	margin-top: 25px;
+}
+#tool {
+	width: 485px;
+	height: auto;
+	margin-top: 20px;
+	vertical-align: top;
+	display: inline-block;
+}
+.toollabel {	
+	width: 100%;
+	height: auto;
+	color: white;
+	padding: 10px;
+	display: block;
+	font-weight: bold;
+	background: #80baac;
+}
+
+#displayR {
+	width: 265px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+#displayR div {
+	color: #2b6859;
+	padding: 5px;
+	cursor: pointer;
+	border: 1px solid #80baac;
+	border-top: none;
+	background: #c8e4de;
+}

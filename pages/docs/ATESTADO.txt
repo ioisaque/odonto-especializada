@@ -1,0 +1,28 @@
+Atesto para os devidos fins que o(a) paciente <b>_paciente_</b> esteve em nossa clínica no dia <b>_data_</b> e foi submetido(a) a uma cirurgia nesta data, necessitando assim de afastamento por <b>_tempo_</b> a partir desta data.
+<b>_K0.1_</b>
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Ipatinga <b>_dia_</b> de <b>_mes_</b> de <b>_ano_</b>
+
+
+
+
+
+
+
+
+
+
+<center>_______________________________________________________________________
+<b>_dentista_
+_especialidade_
+_cro_</b>
+</center>
